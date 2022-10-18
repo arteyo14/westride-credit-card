@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeStride|credit card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="card-front">
+          <div class="head-card">
+            <h2 id="bank-name-show" class="bank-name"">Bank Name</h2>
+            <h2 id="bank-logo">Logo Here</h2>
+          </div>
+          <div class="chips">
+            <div class="arrow"></div>
+            <img
+              src="https://img.icons8.com/fluency/344/sim-card-chip.png"
+              alt=""
+              class="card-ship"
+            />
+          </div>
+          <div id="card-show" class="card-number">0123 2345 5678 9000</div>
+          <p class="card-validdate">
+            <span class="text">
+              VALID
+              <br />
+              DATE
+            </span>
+            <span class="date" id="card-expire-show">08/21</span>
+          </p>
+          <div id="owner-name-show" class="card-holder">Owner Name</div>
+          <div class="card-type"></div>
+          <div class="card-type1"></div>
+        </div>
+        <div class="card-back">
+          <div class="black-bar"></div>
+          <div class="cvc-white" id="cvc-code-show">535</div>
+          <div class="card-line">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+          </div>
+          <div class="card-term">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus sit repellat nesciunt libero tempora voluptatem, est
+              quidem, quis nulla ducimus at architecto consequatur illo laborum.
+              Quod distinctio et mollitia voluptates perferendis eligendi
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+              est saepe ab distinctio, sit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="form-content">
+        <div class="input-top">
+          <div class="input-warp1 full">
+            <label>Owner Name</label>
+            <input type="text" id="owner-name" class="input-field" />
+          </div>
+          <div class="input-warp1 full">
+            <label>Bank Name</label>
+            <input type="text" id="bank-name" class="input-field" />
+          </div>
+          <div class="input-warp1 full">
+            <label>Card Number</label>
+            <input
+              type="text"
+              id="card-no"
+              class="input-field"
+              maxlength="16"
+            />
+          </div>
+        </div>
+        <div class="date-input">
+          <div class="input-wrap half">
+            <label>MM / YY</label>
+            <input type="text" id="card-expire-input" class="input-field" maxlength="4" />
+          </div>
+          <div class="input-wrap half">
+            <label>CVC Code</label>
+            <input type="text" id="cvc-code" class="input-field" maxlength="3" />
+          </div>
+        </div>
+        <button>paynow</button>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
